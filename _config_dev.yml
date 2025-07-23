@@ -1,0 +1,11 @@
+incremental: true
+livereload: true
+livereload_port: 35729
+
+analytics: false
+pwa:
+  enabled: false
+  cache:
+    enabled: false
+
+plugins_dir: []

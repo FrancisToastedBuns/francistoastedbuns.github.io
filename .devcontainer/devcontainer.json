@@ -1,4 +1,7 @@
 {
+  "mounts": [
+    "source=${localWorkspaceFolder}/.jekyll-cache,target=${containerWorkspaceFolder}/.jekyll-cache,type=bind,consistency=cached"
+  ],
   "name": "Jekyll",
   "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
   "onCreateCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
