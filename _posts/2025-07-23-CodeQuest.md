@@ -1,6 +1,6 @@
 ---
-title: Code Quest
-description: Codequest, the project
+title: "Code Quest: A Turn-Based Android Game Teaching Java Fundamentals"
+description: Learn Java through interactive turn-based gameplay
 author: cotes
 date: 2025-07-23 10:18:00 +0800
 categories: [Blogging, ProjectPortfolio]
@@ -14,175 +14,94 @@ image:
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
-## Headings
+![Code Quest Gameplay](/assets/lib/public/mockimage.jpg){: .shadow .rounded-10 w='800' h='450' }  
+*Code Quest: Learn Java through interactive turn-based gameplay.*  
 
-# H1 — heading
-{: .mt-4 .mb-0 }
+## **About the Project**  
+**Code Quest** is an **educational Android game** designed to teach **Java programming fundamentals** through:  
+- 🎮 **Turn-based gameplay** with coding challenges.  
+- 📝 **Quizzes, drag-and-drop mini-games**, and quests.  
+- 💡 **Real Java syntax** parsing using the **Roslyn compiler** (C#).  
+- 📖 **Rich dialogue** to guide learners.  
 
-## Paragraph
+### **Key Features**  
+1. **Interactive Java Lessons**  
+   - Players write code to solve in-game puzzles.  
+   - Immediate feedback via a **mimicked Java compiler** (parsed from text files).  
+2. **Diverse Challenges**  
+   - Multiple-choice quizzes.  
+   - Code-block sequencing (drag-and-drop).  
+   - Debugging tasks.  
+3. **Engaging Narrative**  
+   - Story-driven quests to motivate learning.  
 
-Quisque egestas convallis ipsum, ut sollicitudin risus tincidunt a. Maecenas interdum malesuada egestas. Duis consectetur porta risus, sit amet vulputate urna facilisis ac. Phasellus semper dui non purus ultrices sodales. Aliquam ante lorem, ornare a feugiat ac, finibus nec mauris. Vivamus ut tristique nisi. Sed vel leo vulputate, efficitur risus non, posuere mi. Nullam tincidunt bibendum rutrum. Proin commodo ornare sapien. Vivamus interdum diam sed sapien blandit, sit amet aliquam risus mattis. Nullam arcu turpis, mollis quis laoreet at, placerat id nibh. Suspendisse venenatis eros eros.
+---
 
-## Lists
+## **Tech Stack**  
+| Component         | Technology Used         |
+| ----------------- | ----------------------- |
+| **Game Engine**   | Unity (C#)              |
+| **Java Compiler** | Roslyn + custom parsing |
+| **UI/UX**         | Unity UI Toolkit        |
+| **Data Storage**  | JSON/text files         |
 
-### Ordered list
+```csharp  
+// Example: Parsing Java code from text files  
+public void ParseJavaCode(string filePath) {  
+  string code = File.ReadAllText(filePath);  
+  // Roslyn compilation logic here...  
+}  
+```  
+*How Code Quest mimics a Java environment.*  
 
-1. Firstly
-2. Secondly
-3. Thirdly
+---
 
-### Unordered list
+## **How It Works**  
+1. **Players encounter a coding problem** (e.g., fix a loop).  
+2. **Solve it via**:  
+   - Typing code directly.  
+   - Arranging code blocks (drag-and-drop).  
+3. **The game "compiles" their answer** using Roslyn and gives feedback.  
 
-- Chapter
-  - Section
-    - Paragraph
+> **Why Java?**  
+> Java’s strict syntax makes it ideal for teaching core programming concepts like OOP and logic structures.  
+{: .prompt-info }  
 
-### ToDo list
+---
 
-- [ ] Job
-  - [x] Step 1
-  - [x] Step 2
-  - [ ] Step 3
+## **Challenges & Solutions**  
+| Challenge                  | Solution Implemented              |
+| -------------------------- | --------------------------------- |
+| Mimicking Java compilation | Used Roslyn + custom parsers      |
+| Engaging non-coders        | Added RPG-like quests & story     |
+| Cross-platform performance | Optimized Unity build for Android |
 
-### Description list
+---
 
-Sun
-: the star around which the earth orbits
+## **Future Plans**  
+- [ ] Add multiplayer coding battles.  
+- [ ] Expand to Python/C# lessons.  
+- [ ] Integrate with IDE plugins for real-world practice.  
 
-Moon
-: the natural satellite of the earth, visible by reflected light from the sun
+---
 
-## Block Quote
+### **Try It Out**  
+Download the APK [here](#) (link) or check the [GitHub repo](#).  
 
-> This line shows the _block quote_.
+[^footnote]: Built with Unity 2022.  
+[^fn-nth-2]: Roslyn compiler docs: [Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/).  
 
-## Prompts
+---
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-> An example showing the `tip` type prompt.
-{: .prompt-tip }
+### **Changes Made to Your Template:**  
+1. **Replaced placeholder text** with project-specific details.  
+2. **Added a feature table** and code snippet for clarity.  
+3. **Included screenshots/GIFs** (replace `mockimage.jpg` with actual gameplay images).  
+4. **Structured challenges/solutions** for readability.  
 
-> An example showing the `info` type prompt.
-{: .prompt-info }
+**Next Steps:**  
+- Replace `/assets/lib/public/mockimage.jpg` with real screenshots.  
+- Add a **download link** for the APK/GitHub.  
+- Consider embedding a [YouTube demo](#) (like your template’s video section).  
 
-> An example showing the `warning` type prompt.
-{: .prompt-warning }
-
-> An example showing the `danger` type prompt.
-{: .prompt-danger }
-<!-- markdownlint-restore -->
-
-## Tables
-
-| Company                      | Contact          | Country |
-| :--------------------------- | :--------------- | ------: |
-| Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    |      UK |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli |   Italy |
-
-## Links
-
-<http://127.0.0.1:4000>
-
-## Footnote
-
-Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
-
-## Inline code
-
-This is an example of `Inline Code`.
-
-## Filepath
-
-Here is the `/path/to/the/file.extend`{: .filepath}.
-
-## Code blocks
-
-### Common
-
-```text
-This is a common code snippet, without syntax highlight and line number.
-```
-
-### Specific Language
-
-```bash
-if [ $? -ne 0 ]; then
-  echo "The command was not successful.";
-  #do the needful / exit
-fi;
-```
-
-### Specific filename
-
-```sass
-@import
-  "colors/light-typography",
-  "colors/dark-typography";
-```
-{: file='_sass/jekyll-theme-chirpy.scss'}
-
-## Mathematics
-
-The mathematics powered by [**MathJax**](https://www.mathjax.org/):
-
-$$
-\begin{equation}
-  \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6}
-  \label{eq:series}
-\end{equation}
-$$
-
-We can reference the equation as \eqref{eq:series}.
-
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
-## Mermaid SVG
-
-```mermaid
- gantt
-  title  Adding GANTT diagram functionality to mermaid
-  apple :a, 2017-07-20, 1w
-  banana :crit, b, 2017-07-23, 1d
-  cherry :active, c, after b a, 1d
-```
-
-## Images
-
-### Default (with caption)
-
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" }
-_Full screen width and center alignment_
-
-### Left aligned
-
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" .w-75 .normal}
-
-### Float to left
-
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" .w-50 .left}
-Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecenas pharetra, sem sit amet interdum posuere, tellus lacus eleifend magna, ac lobortis felis ipsum id sapien. Proin ornare rutrum metus, ac convallis diam volutpat sit amet. Phasellus volutpat, elit sit amet tincidunt mollis, felis mi scelerisque mauris, ut facilisis leo magna accumsan sapien. In rutrum vehicula nisl eget tempor. Nullam maximus ullamcorper libero non maximus. Integer ultricies velit id convallis varius. Praesent eu nisl eu urna finibus ultrices id nec ex. Mauris ac mattis quam. Fusce aliquam est nec sapien bibendum, vitae malesuada ligula condimentum.
-
-### Float to right
-
-![Desktop View](/posts/20190808/mockup.png){: width="972" height="589" .w-50 .right}
-Praesent maximus aliquam sapien. Sed vel neque in dolor pulvinar auctor. Maecenas pharetra, sem sit amet interdum posuere, tellus lacus eleifend magna, ac lobortis felis ipsum id sapien. Proin ornare rutrum metus, ac convallis diam volutpat sit amet. Phasellus volutpat, elit sit amet tincidunt mollis, felis mi scelerisque mauris, ut facilisis leo magna accumsan sapien. In rutrum vehicula nisl eget tempor. Nullam maximus ullamcorper libero non maximus. Integer ultricies velit id convallis varius. Praesent eu nisl eu urna finibus ultrices id nec ex. Mauris ac mattis quam. Fusce aliquam est nec sapien bibendum, vitae malesuada ligula condimentum.
-
-### Dark/Light mode & Shadow
-
-The image below will toggle dark/light mode based on theme preference, notice it has shadows.
-
-![light mode only](/posts/20190808/devtools-light.png){: .light .w-75 .shadow .rounded-10 w='1212' h='668' }
-![dark mode only](/posts/20190808/devtools-dark.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
-
-## Video
-
-{% include embed/youtube.html id='Balreaj8Yqs' %}
-
-## Reverse Footnote
-
-[^footnote]: The footnote source
-[^fn-nth-2]: The 2nd footnote source
+Let me know if you’d like to emphasize any other aspects (e.g., team, awards, or lesson plans)! 🚀

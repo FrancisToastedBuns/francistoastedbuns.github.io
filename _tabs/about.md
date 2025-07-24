@@ -2,7 +2,7 @@
 layout: page
 title: Hi my name is Francis Allen!
 description: "Full-Stack Developer | LeetCode Enthusiast | C# & Python Expert"
-image: /assets/images/profile.jpg
+order: 4
 ---
 
 ## 🚀 About Me
