@@ -9,12 +9,12 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/lib/public/mockimage.jpg
+  path: public/codequest/codequest.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
-![Code Quest Gameplay](/assets/lib/public/mockimage.jpg){: .shadow .rounded-10 w='800' h='450' }  
+![Code Quest Gameplay](public/codequest/codequest.gif){: .shadow .rounded-10 w='800' h='450' }  
 *Code Quest: Learn Java through interactive turn-based gameplay.*  
 
 ## **About the Project**  
@@ -100,7 +100,7 @@ Download the APK [here](#) (link) or check the [GitHub repo](#).
 4. **Structured challenges/solutions** for readability.  
 
 **Next Steps:**  
-- Replace `/assets/lib/public/mockimage.jpg` with real screenshots.  
+- Replace `public/2.jpg` with real screenshots.  
 - Add a **download link** for the APK/GitHub.  
 - Consider embedding a [YouTube demo](#) (like your template’s video section).  
 

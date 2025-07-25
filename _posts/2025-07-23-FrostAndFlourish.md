@@ -5,20 +5,9 @@ author: cotes
 date: 2025-07-23 10:18:00 +0800
 categories: [Blogging, ProjectPortfolio]
 tags: [typography]
-pin: true
 math: true
 mermaid: true
-image:
-  path: /assets/lib/public/mockimage.jpg
-  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
-
-![Frost & Flourish Hero Banner](/assets/img/frost-flourish-demo.jpg){: .shadow .rounded-10 }  
-*Where premium baking meets effortless shopping—sprinkles, molds, and specialty flours shipped fresh to your kitchen.*  
-
----
-
 ## **Key Features**  
 - **🍰 Curated Collections**: High-quality tools (silicone molds, precision scales) and ingredients (organic vanilla, edible glitter).  
 - **📦 Subscription Boxes**: Monthly themed kits (e.g., "Macaron Masterclass").  

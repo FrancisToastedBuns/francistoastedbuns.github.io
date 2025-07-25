@@ -9,7 +9,7 @@ pin: true
 math: true
 mermaid: true
 image:
-  path: /assets/lib/public/mockimage.jpg
+  path: public/junglejump/junglejump.png
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
@@ -17,7 +17,7 @@ image:
 
 ---
 
-![Jungle Jump Gameplay](/assets/img/jungle-jump-demo.gif){: .shadow .rounded-10 w='800' h='450' }  
+![Jungle Jump Gameplay](/public/junglejump/junglejump.gif){: .shadow .rounded-10 w='800' h='450' }  
 *Dodge vines, leap over pits, and outrun enemies in this fast-paced jungle romp!*  
 
 ---
