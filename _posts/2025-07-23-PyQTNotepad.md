@@ -12,9 +12,9 @@ image:
   lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
-
+<!-- 
 ![PyQt Notepad Screenshot](/assets/img/notepad-demo.png){: .shadow .rounded-10 w='800' h='450' }  
-*A lightweight, customizable text editor built with Python and PyQt.*  
+*A lightweight, customizable text editor built with Python and PyQt.*   -->
 
 ## **Features**  
 ✔ **Familiar Interface** – Mirrors classic Windows Notepad with added enhancements.  
@@ -84,13 +84,13 @@ class Notepad(QMainWindow):
 **Download**: [Get the .exe/.dmg here](#) | **GitHub**: [Source Code](#)  
 
 ---
-
+<!-- 
 ### **Screenshot Gallery**  
 | Light Mode                                          | Dark Mode                                         |
 | --------------------------------------------------- | ------------------------------------------------- |
 | ![Light](/assets/img/notepad-light.png){: .border } | ![Dark](/assets/img/notepad-dark.png){: .border } |
 
----
+--- -->
 
 This keeps the **Chirpy theme’s** clean layout while highlighting your project’s technical strengths. Customize the screenshots/links, and it’s ready to deploy!  
 
