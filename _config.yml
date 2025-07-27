@@ -38,11 +38,11 @@ social:
   email: mesa.francis.allen.santos@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
+    # - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/FrancisToastedBuns # change to your GitHub homepage
     # Uncomment below to add more social links
     - https://www.facebook.com/AllenLaMesa/
-    #- https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/francis-allen-mesa-944045377/
 
 # Site Verification Settings
 webmaster_verifications:
@@ -235,5 +235,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-archives
   - jekyll-sitemap
-
+  - jekyll-mermaid
 include_cache: true

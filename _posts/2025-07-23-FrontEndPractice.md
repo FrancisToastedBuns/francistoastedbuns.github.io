@@ -1,89 +1,64 @@
 ---
 title: "Frontend Playground: Interactive Project Gallery"
 description: A portfolio to showcase all the projects I practiced on!
-author: cotes
+author: Francis Allen Mesa
 date: 2025-07-23 10:18:00 +0800
-categories: [Blogging, ProjectPortfolio]
-tags: [typography]
+categories: [Statistic]
+tags: [Statistics]
 math: true
 mermaid: true
 ---
 
-<!-- ![Portfolio Preview](/assets/img/portfolio-demo.gif){: .shadow .rounded-10 w='100%' }  
-*A dynamic showcase of web experiments, frameworks, and UI designs.* -->
+# **Frontend Playground: My Learning Journey**  
 
----
+This interactive portfolio represents my ongoing effort to strengthen my frontend development skills—an area I've historically found challenging. Through dedicated practice, I've completed **10+ frontend projects**, each tackling different aspects of modern web development.  
 
-## **Featured Projects**
-### 1. **Neon Calculator (React + CSS Animations)**  
-   - **Tech**: React Hooks, Framer Motion  
-   - **Demo**: [Live Link](#)  
-   - **Code**: [GitHub](#)
-   {% raw %}
-   ```javascript
-   // Animated button component
-   <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-   {buttonLabel}
-   </motion.button>
-   ```
-   {% endraw %}
+## **Why This Matters**  
 
-### 2. **Weather Dashboard (Vue + API Integration)**  
-   - **Tech**: Vue 3, OpenWeatherMap API  
-   - **Features**: Geolocation, 5-day forecast graphs  
-   ![Weather App](/assets/img/weather-demo.jpg){: .w-75 .border}
+As someone who initially struggled with:  
+- Responsive layout implementation  
+- State management in JavaScript  
+- CSS architecture  
 
-### 3. **Pixel Art Editor (Vanilla JS Canvas)**  
-   - **Tech**: HTML5 Canvas, Web Storage  
-   - **Interactive**: Try it [here](#)  
+This collection demonstrates my commitment to:  
+✔ **Deliberate practice** (focused project-based learning)  
+✔ **Progressive complexity** (from vanilla JS to frameworks)  
+✔ **Toolchain mastery** (build tools, testing, CI/CD)  
 
----
+## **Project Breakdown**  
 
-## **Tech Stack Showcase**
-<div class="tech-grid" markdown="1">
-| Category       | Tools Used                         |
-| -------------- | ---------------------------------- |
-| **Frameworks** | React, Vue, Svelte                 |
-| **Styling**    | Tailwind, SCSS, CSS Grid/Animation |
-| **APIs**       | REST, GraphQL, Firebase            |
-| **Testing**    | Jest, Cypress                      |
-</div>
+### **Fundamental Concepts Mastered**  
+1. **DOM Manipulation** (Pixel Art Editor)  
+2. **API Consumption** (Weather Dashboard)  
+3. **Component Architecture** (Neon Calculator)  
+4. **State Management** (React hooks, Vuex)  
+5. **CSS Layout Systems** (Flexbox, Grid, animations)  
 
----
+### **Current Learning Focus**  
+- Advanced React patterns (compound components)  
+- Web performance optimization  
+- Accessibility compliance (WCAG 2.1)  
 
-## **Interactive Elements**
-- **Project Filter**:  
-  ```html
-  <!-- Filter by tech -->
-  <button @click="filterProjects('react')" 
-          class="filter-btn" data-active="true">
-    React
-  </button>
-  ```
-- **Live Code Previews**: Embedded CodePens/JSFiddles  
-- **Dark Mode Toggle**: Persists via `localStorage`
+## **Progress Metrics**  
 
----
+| Skill Area          | Starting Level | Current Level | Projects Completed |  
+|---------------------|----------------|---------------|--------------------|  
+| JavaScript          | Beginner       | Intermediate  | 4                  |  
+| CSS/SASS           | Novice         | Proficient    | 3                  |  
+| React              | New            | Comfortable   | 2                  |  
+| Testing            | None           | Basic         | 1                  |  
 
-## **Design Philosophy**
-> "Mobile-first, accessible components with <br> 
-> **90+ Lighthouse scores** across PWA metrics."
-{: .prompt-tip }
+## **The Learning Process**  
 
----
+Each project followed this pattern:  
+1. **Tutorial Implementation** (Understanding core concepts)  
+2. **Custom Enhancements** (Adding personal features)  
+3. **Code Refactoring** (Improving initial solutions)  
+4. **Performance Audit** (Lighthouse metrics)  
 
-## **Get the Code**
-```bash
-# Clone portfolio source
-git clone https://github.com/yourusername/frontend-portfolio.git
-```
-**Template Available**: [Use this design](#) (MIT Licensed)
+## **Next Steps**  
 
----
-
-### **Why This Stands Out**
-- **Micro-interactions**: Hover animations on every card  
-- **SEO Optimized**: Auto-generated project schema markup  
-- **CMS Ready**: Netlify CMS integration for easy updates  
-
-
+While I've built a solid foundation, I'm actively working on:  
+- **Complex state management** (Redux, Context API)  
+- **Advanced animations** (GSAP, Three.js basics)  
+- **Server-side rendering** (Next.js implementation)  

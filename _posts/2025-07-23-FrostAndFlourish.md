@@ -1,70 +1,38 @@
 ---
 title: "Frost & Flourish: Artisan Baking Delivered"
-description: A websited designed to sell products! (Practice Project)
-author: cotes
+description: A websited designed to sell products! Made by me and my friends! (Practice Project)
+author: Francis Allen Mesa
 date: 2025-07-23 10:18:00 +0800
-categories: [Blogging, ProjectPortfolio]
-tags: [typography]
+categories: [Project]
+tags: [Minor-Project, Web-Development]
 math: true
 mermaid: true
 ---
-## **Key Features**  
-- **🍰 Curated Collections**: High-quality tools (silicone molds, precision scales) and ingredients (organic vanilla, edible glitter).  
-- **📦 Subscription Boxes**: Monthly themed kits (e.g., "Macaron Masterclass").  
-- **🎥 Tutorial Hub**: Free recipes with purchased products.  
-- **🛒 One-Click Bundles**: Pre-packed sets for popular bakes (e.g., "Sourdough Starter Kit").  
+## What We Built  
 
-```html
-<!-- Example: Product card component -->
-<div class="product-card" data-category="decor">
-  <img src="/assets/products/edible-gold.png" alt="Edible Gold Leaf">
-  <button class="snipcart-add-item" 
-          data-item-id="gold-leaf-10sht">
-    Add to Cart
-  </button>
-</div>
-```
+A complete bakery management system with:  
+- **User roles** (Admin vs Customer)  
+- **Session-based cart system** (state management the old-school way)  
+- **Product CRUD operations** (Create, Read, Update, Delete)  
+- **Product catalog** with categories (Breads, Pastries, Cakes)  
 
----
+### The Pain Points  
+⚠ **Session management headaches** - Debugging `Session["Cart"]` serialization issues  
+⚠ **Manual dependency management** - No built-in DI meant service classes everywhere  
+⚠ **Web.config nightmares** - Endless XML tags for simple settings  
 
-## **Tech Stack**  
-| Area          | Tools Used                   |
-| ------------- | ---------------------------- |
-| **Frontend**  | React (Gatsby), Tailwind CSS |
-| **Backend**   | Shopify API, Snipcart        |
-| **CMS**       | Contentful for recipes/blog  |
-| **Analytics** | Google Analytics + Hotjar    |
+## Key Lessons Learned  
 
----
+1. **State management is painful** - Sessions work but feel archaic compared to modern approaches  
+2. **Separation of concerns matters** - Even without DI, we enforced clean layers  
+3. **Razor is timeless** - The view engine still holds up well today  
 
-## **Why Bakers Love It**  
-1. **Discovery-first Design**:  
-   - Filter by *dietary need* (gluten-free, vegan) or *skill level*.  
-2. **Community-Driven**:  
-   - User-generated photos (#FrostAndFlourish) featured on product pages.  
-3. **Seamless Checkout**:  
-   - Guest purchases + saved carts for registered users.  
+## Would I Build This Again in Framework?  
 
-> “Finally, a store that understands *exactly* what I need for my French patisserie phase!” — *Home Baker Review*  
-{: .prompt-tip }
+Only if maintaining legacy systems. Modern .NET Core offers:  
+- **Cleaner dependency injection**  
+- **Environment-based configuration**  
+- **Cross-platform support**  
+- **Better performance**  
 
----
-
-## **Live Demo**  
-- **Visit**: [www.frostandflourish.com](#)  
-- **Featured Product**: [Limited-Edition Holiday Cookie Stamps](#)  
-
----
-
-### **Sneak Peek**  
-| Mobile View                                         | Desktop View                                          |
-| --------------------------------------------------- | ----------------------------------------------------- |
-| ![Mobile](/assets/img/frost-mobile.jpg){: .border } | ![Desktop](/assets/img/frost-desktop.jpg){: .border } |
-
----
-
-**Tagline Options**:  
-- *“Bake Confidence, Delivered.”*  
-- *“Elevate Your Baking—No Fuss.”*  
-
-Need a **mockup** of the shopping flow or CMS integration details? Let me know! 🧁
+This project taught me both the value of understanding legacy systems and the importance of moving forward. While I appreciate what I learned, my new projects all use modern .NET!  

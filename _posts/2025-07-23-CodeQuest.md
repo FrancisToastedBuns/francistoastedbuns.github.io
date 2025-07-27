@@ -1,10 +1,10 @@
 ---
 title: "Code Quest: A Turn-Based Android Game Teaching Java Fundamentals"
 description: Learn Java through interactive turn-based gameplay
-author: cotes
+author: Francis Allen Mesa
 date: 2025-07-23 10:18:00 +0800
-categories: [Blogging, ProjectPortfolio]
-tags: [typography]
+categories: [Project]
+tags: [Major-Project, Game-Development]
 pin: true
 math: true
 mermaid: true
@@ -49,7 +49,7 @@ image:
 // Example: Parsing Java code from text files  
 public void ParseJavaCode(string filePath) {  
   string code = File.ReadAllText(filePath);  
-  // Roslyn compilation logic here...  
+  
 }  
 ```  
 *How Code Quest mimics a Java environment.*  
@@ -60,48 +60,19 @@ public void ParseJavaCode(string filePath) {
 1. **Players encounter a coding problem** (e.g., fix a loop).  
 2. **Solve it via**:  
    - Typing code directly.  
-   - Arranging code blocks (drag-and-drop).  
+   - Removing the syntax that is causing the problem.
 3. **The game "compiles" their answer** using Roslyn and gives feedback.  
 
 > **Why Java?**  
-> Java’s strict syntax makes it ideal for teaching core programming concepts like OOP and logic structures.  
+> Java’s strict syntax makes it ideal for teaching core programming concepts like OOP and logic structures, in addition, it was the most popular language used to teach grade 11 and 12 students.  
 {: .prompt-info }  
 
 ---
 
 ## **Challenges & Solutions**  
+
 | Challenge                  | Solution Implemented              |
-| -------------------------- | --------------------------------- |
+|----------------------------|-----------------------------------|
 | Mimicking Java compilation | Used Roslyn + custom parsers      |
 | Engaging non-coders        | Added RPG-like quests & story     |
 | Cross-platform performance | Optimized Unity build for Android |
-
----
-
-## **Future Plans**  
-- [ ] Add multiplayer coding battles.  
-- [ ] Expand to Python/C# lessons.  
-- [ ] Integrate with IDE plugins for real-world practice.  
-
----
-
-### **Try It Out**  
-Download the APK [here](#) (link) or check the [GitHub repo](#).  
-
-[^footnote]: Built with Unity 2022.  
-[^fn-nth-2]: Roslyn compiler docs: [Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/csharp/roslyn-sdk/).  
-
----
-
-### **Changes Made to Your Template:**  
-1. **Replaced placeholder text** with project-specific details.  
-2. **Added a feature table** and code snippet for clarity.  
-3. **Included screenshots/GIFs** (replace `mockimage.jpg` with actual gameplay images).  
-4. **Structured challenges/solutions** for readability.  
-
-**Next Steps:**  
-- Replace `public/2.jpg` with real screenshots.  
-- Add a **download link** for the APK/GitHub.  
-- Consider embedding a [YouTube demo](#) (like your template’s video section).  
-
-Let me know if you’d like to emphasize any other aspects (e.g., team, awards, or lesson plans)! 🚀

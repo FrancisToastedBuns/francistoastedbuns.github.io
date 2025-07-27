@@ -1,99 +1,78 @@
 ---
 title: "PyQt Notepad: A Windows-Style Text Editor"
 description: A lightweight, customizable text editor built with Python and PyQt.
-author: cotes
+author: Francis Allen Mesa
 date: 2025-07-23 10:18:00 +0800
-categories: [Blogging, ProjectPortfolio]
-tags: [typography]
+categories: [Project]
+tags: [Desktop-Development, Minor-Project]
 math: true
 mermaid: true
-image:
-  path: public/2.jpg
-  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
-  alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
-<!-- 
-![PyQt Notepad Screenshot](/assets/img/notepad-demo.png){: .shadow .rounded-10 w='800' h='450' }  
-*A lightweight, customizable text editor built with Python and PyQt.*   -->
 
-## **Features**  
-✔ **Familiar Interface** – Mirrors classic Windows Notepad with added enhancements.  
-✔ **Rich Text Editing** – Supports plain text (.txt) and basic formatting (bold, italics, underline).  
-✔ **Customizable UI** – Dark/light mode, font size, and theme options.  
-✔ **Essential Tools** – Find/replace, undo/redo, print, and file encoding (UTF-8, ASCII).  
-✔ **Cross-Platform** – Runs on Windows, Linux, and macOS.  
+![PyQt Notepad Screenshot](/public/pyqt/pyqt.png){: .shadow .rounded-10 w='800' h='450' }  
+*A lightweight, customizable text editor built with Python and PyQt.*  
 
-```python
-# Example: Core PyQt setup
-from PyQt6.QtWidgets import QApplication, QMainWindow, QTextEdit
+# My PyQt Notepad Nightmare: A Humbling Journey into Python GUIs
 
-class Notepad(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.text_edit = QTextEdit()
-        self.setCentralWidget(self.text_edit)
-        self.setWindowTitle("PyQt Notepad")
+Last October, I decided to build a simple Notepad clone using PyQt. What I thought would be a weekend project turned into weeks of frustration, confusion, and eventual reluctant admiration. Here's my raw, unfiltered experience.
+
+## Why I Chose PyQt
+
+As someone comfortable with WPF and WinForms, I wanted to explore Python GUI options. PyQt kept coming up in discussions as the "professional choice" - powerful, cross-platform, and feature-rich. Perfect, I thought. I know GUIs, I know Python - how hard could it be?
+
+## The Reality Check
+
+The first red flag appeared when I tried to handle a simple button click. In WPF:
+```csharp
+myButton.Click += (sender, e) => { DoSomething(); };
 ```
 
----
+In PyQt:
+```python
+self.my_button.clicked.connect(self.do_something)
+```
 
-## **Tech Stack**  
-| Component         | Technology Used          |
-| ----------------- | ------------------------ |
-| **GUI Framework** | PyQt6 (Qt for Python)    |
-| **Language**      | Python 3.10+             |
-| **Tools**         | Qt Designer, PyInstaller |
+This "signals and slots" concept felt unnecessarily convoluted. Why reinvent the wheel when event handlers work perfectly fine?
 
----
+## Layout Hell
 
-## **How It Compares to Windows Notepad**  
-| Feature         | Windows Notepad | PyQt Notepad |
-| --------------- | --------------- | ------------ |
-| Dark Mode       | ❌ No            | ✅ Yes        |
-| Text Formatting | ❌ No            | ✅ Basic      |
-| Cross-Platform  | ❌ Windows-only  | ✅ Yes        |
-| Open Source     | ❌ No            | ✅ Yes        |
+Then came the layout system. In WPF, XAML's Grid and StackPanel make UI design intuitive. PyQt's layout managers? A nightmare.
 
-> **Why PyQt?**  
-> PyQt offers native-looking UIs and granular control over widgets, perfect for replicating (and improving) classic apps.  
-{: .prompt-tip }  
+I spent an entire day trying to:
+1. Make a toolbar stay at the top
+2. Have a status bar stick to the bottom
+3. Keep the text editor resizing properly
 
----
+QHBoxLayout, QVBoxLayout, addStretch(), setContentsMargins() - it felt like I needed a PhD just to position elements properly. My respect for Qt developers grew exponentially during this phase.
 
-## **Installation**  
-1. Clone the repo:  
-   ```bash
-   git clone https://github.com/yourusername/pyqt-notepad.git
-   ```
-2. Install dependencies:  
-   ```bash
-   pip install PyQt6
-   ```
-3. Run the app:  
-   ```bash
-   python notepad.py
-   ```
+## Documentation Woes
 
----
+The official Qt documentation assumes C++ knowledge. Python examples are either:
+- Too trivial (showing a blank window)
+- Too complex (enterprise-level implementations)
+- Non-existent
 
-## **Future Roadmap**  
-- [ ] Add syntax highlighting for code.  
-- [ ] Integrate cloud save (Google Drive/Dropbox).  
-- [ ] Plugin system for extensions (e.g., Markdown support).  
+I became a regular at:
+- Stack Overflow threads from 2012
+- Obscure programming forums
+- GitHub issues of abandoned projects
 
-**Download**: [Get the .exe/.dmg here](#) | **GitHub**: [Source Code](#)  
+## The Breakthrough Moment
 
----
-<!-- 
-### **Screenshot Gallery**  
-| Light Mode                                          | Dark Mode                                         |
-| --------------------------------------------------- | ------------------------------------------------- |
-| ![Light](/assets/img/notepad-light.png){: .border } | ![Dark](/assets/img/notepad-dark.png){: .border } |
+After what felt like ages, things started clicking. I realized:
+1. PyQt's flexibility is its strength - you can customize everything
+2. The learning curve is steep but the payoff is worth it
+3. Once you understand the patterns, development becomes faster
 
---- -->
+## Final Thoughts
 
-This keeps the **Chirpy theme’s** clean layout while highlighting your project’s technical strengths. Customize the screenshots/links, and it’s ready to deploy!  
+Would I recommend PyQt? Yes, but with caveats:
+- ✅ For complex, polished applications
+- ✅ When cross-platform is crucial
+- ✅ If you're willing to invest time learning
 
-Need tweaks? For example:  
-- A "heroic" Tagalog name for the app (e.g., *"SulatPad"* from *"sulat"* = to write)?  
-- More emphasis on specific features?
+- 🚫 Not for quick prototypes
+- 🚫 Not if you expect WPF-like convenience
+- 🚫 Definitely not if you're impatient
+
+This project humbled me. It showed that even with GUI experience, new frameworks require starting from scratch. right now, although i see the potential of PyQT, winforms and WPF won me over eventually, but the journey was... character-building.

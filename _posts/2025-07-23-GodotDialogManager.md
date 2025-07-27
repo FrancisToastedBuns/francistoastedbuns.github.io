@@ -1,10 +1,10 @@
 ---
 title: "InkDialog: Branching Story System for Godot"
 description: Dialog system templates for easier development!
-author: cotes
+author: Francis Allen Mesa
 date: 2025-07-23 10:18:00 +0800
-categories: [Blogging, ProjectPortfolio]
-tags: [typography]
+categories: [Project]
+tags: [Major-Project, Game-Development]
 pin: true
 math: true
 mermaid: true
@@ -27,8 +27,9 @@ var text = ink_story.continue()
 ---
 
 ## **Tech Stack**  
+
 | Component          | Technology Used           |
-| ------------------ | ------------------------- |
+|--------------------|---------------------------|
 | **Game Engine**    | Godot 4.2                 |
 | **Narrative**      | Ink.js (via inkgd plugin) |
 | **UI**             | Godot’s Control nodes     |
@@ -39,10 +40,12 @@ var text = ink_story.continue()
 ## **How It Works**  
 1. **Write Stories in Ink**:  
    ```ink
+   
    === meeting_guard ===
    "Halt! Who goes there?"
    * [Lie] "I’m the king!" -> guard_laughs
    * [Truth] "Just a traveler." -> allow_passage
+   
    ```
 2. **Import to Godot**: The plugin converts `.ink` to JSON.  
 3. **Render Choices**: Dynamically generate buttons from Ink branches.  
@@ -74,13 +77,14 @@ if ink_story.variables.get("knows_secret"):
 - RPG dialog systems  
 - Interactive fiction tools  
 
-**Demo**: [Web Export Playable Here](#) | **GitHub**: [inkgd Plugin Setup](#)  
+<!-- **Demo**: [Web Export Playable Here](#) | **GitHub**: [inkgd Plugin Setup](#)   -->
 
 ---
+## **Why create a new dialogue manager? Why not use existing plugins?**
+I want my own DialogManager because I need complete control over its functionality to truly grasp how dialogue systems work at a fundamental level. By rebuilding a plugin from scratch, I'll gain deep understanding of module creation and system architecture that using pre-made solutions can't provide. In addition, using ink helps me to essentially reuse existing dialogs just incase I want to change game engines.
 
-## **Comparison to Alternatives**  
 | Feature          | InkDialog | Godot Dialogic | Twine    |
-| ---------------- | --------- | -------------- | -------- |
+|------------------|-----------|----------------|--------|
 | **Ink Support**  | ✅ Yes     | ❌ No           | ✅ Yes    |
 | **Live Preview** | ✅ Yes     | ✅ Yes          | ❌ No     |
 | **Mobile Ready** | ✅ Yes     | ✅ Yes          | Web-only |
@@ -92,17 +96,4 @@ if ink_story.variables.get("knows_secret"):
 - [ ] **Auto-Type Effect**: Letter-by-letter text animation.  
 - [ ] **Timed Choices**: Decisions that expire (e.g., "5 seconds to respond!").  
 
----
-
-### **Screenshots**  
-| Editor Integration                                | Branching Flow                                 |
-| ------------------------------------------------- | ---------------------------------------------- |
-| ![Editor](/assets/img/ink-editor.png){: .border } | ![Flow](/assets/img/ink-graph.png){: .border } |
-
----
-
-**Pro Tip**: Use Ink’s **tags** (`#`) to trigger Godot signals for gameplay events:  
-```ink
-"I’ll help you." # QUEST_ACCEPTED
-```
 

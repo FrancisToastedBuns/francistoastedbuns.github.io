@@ -1,10 +1,10 @@
 ---
 title: "Jungle Jump: A Wild 2D Platformer Adventure"
 description: It is a Godot styled mario game!
-author: cotes
+author: Francis Allen Mesa
 date: 2025-07-23 10:18:00 +0800
-categories: [Blogging, ProjectPortfolio]
-tags: [typography]
+categories: [Project]
+tags: [Major-Project, Game-Development]
 pin: true
 math: true
 mermaid: true
@@ -21,6 +21,7 @@ image:
 *Dodge vines, leap over pits, and outrun enemies in this fast-paced jungle romp!*  
 
 ---
+
 
 ## **Game Features**  
 - 🎮 **Classic Platforming** – Run, jump, and stomp enemies in true Mario style.  
@@ -45,39 +46,24 @@ func _physics_process(delta):
 
 ---
 
-## **Tech Stack**  
-| Component          | Technology Used                 |
-| ------------------ | ------------------------------- |
-| **Engine**         | Godot 4.2                       |
-| **Art**            | Aseprite (Pixel Art)            |
-| **Sound**          | BFXR (SFX), Bosca Ceoil (Music) |
-| **Export Targets** | Windows, Web, Android           |
+| Component | Technology Used |
+|-----------|-----------------|
+| **Engine** | Godot 4.2 |
+| **Art** | Aseprite (Pixel Art) |
+| **Sound** | BFXR (SFX), Bosca Ceoil (Music) |
+| **Export Targets** | Windows/Linux, Web(WIP), Android (WIP)|
 
----
+| Feature | Super Mario | Jungle Jump |
+|---------|-------------|-------------|
+| **Setting** | Mushroom Kingdom | Untamed Jungle |
+| **Art Style** | Cartoony | Pixel Art + Parallax Scrolling |
 
-## **How It Stands Out**  
-| Feature         | Super Mario      | Jungle Jump                    |
-| --------------- | ---------------- | ------------------------------ |
-| **Setting**     | Mushroom Kingdom | Untamed Jungle                 |
-| **Movement**    | Basic Jump       | Wall-Slide, Vine Swing         |
-| **Art Style**   | Cartoony         | Pixel Art + Parallax Scrolling |
-| **Mod Support** | ❌ No             | ✅ Custom maps via JSON         |
-
-> **Why Godot?**  
-> Lightweight, open-source, and perfect for indie 2D platformers with built-in physics.  
-{: .prompt-info }  
-
----
-
-## **Download & Play**  
-- **Web Version**: [Play in browser](#)  
-- **Windows**: [Download .exe](#)  
-- **Android**: [APK on itch.io](#)  
-
-```bash
-# Build from source (Godot required)
-godot --export "Windows Desktop" JungleJump.exe
-```
+{::nomarkdown}
+<blockquote class="prompt-info">
+  <strong>Why Godot?</strong><br>
+  Lightweight, open-source, and perfect for indie 2D platformers with built-in physics.
+</blockquote>
+{:/nomarkdown}
 
 ---
 
@@ -100,22 +86,6 @@ func _process(delta):
 
 ## **Roadmap**  
 - [ ] **Multiplayer Mode** – Race a friend locally.  
-- [ ] **Level Editor** – Let players create/share jungles.  
+- [ ] **Integrated Dialogue** – Let players talk to interesting NPCs.  
 - [ ] **New Biomes** – Volcanic caves, treetop villages.  
 
----
-
-### **Screenshots**  
-| Gameplay                                              | Secret Area                                               |
-| ----------------------------------------------------- | --------------------------------------------------------- |
-| ![Level 1](/assets/img/jungle-jump-1.png){: .border } | ![Hidden](/assets/img/jungle-jump-secret.png){: .border } |
-
----
-
-### **Tagalog Twist?**  
-- **Localized Name**: *"Talón ng Gubat"* (Jungle Leap)  
-- **Filipino-themed Skin**: Replace gorillas with *"kapre"* (tree giants) or fruits with *"lanzones"*.  
-
---- 
-
-Ready to share? Add a **YouTube trailer** (like your template’s embed) and a **GitHub link**! Let me know if you’d like tweaks. 🎮🌿

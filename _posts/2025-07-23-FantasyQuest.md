@@ -1,10 +1,10 @@
 ---
 title: "Fantasy Quest: A Java GUI Text Adventure"
 description: A nostalgic choose-your-own-adventure game with rich GUI storytelling.
-author: cotes
+author: Francis Allen Mesa
 date: 2025-07-23 10:18:00 +0800
-categories: [Blogging, ProjectPortfolio]
-tags: [typography]
+categories: [Project]
+tags: [Desktop-Development, Major-Project, Game-Development]
 pin: true
 math: true
 mermaid: true
@@ -14,101 +14,61 @@ image:
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 
-![Gameplay Screenshot](/public/FantasyGame/Fantasy-Game.gif){: .shadow .rounded-10 w='700' }  
-*A nostalgic choose-your-own-adventure game with rich GUI storytelling.*  
+This Java Swing text adventure game was my first serious attempt at building a complete GUI application. Developed over four months, it taught me fundamental programming concepts through practical implementation.  
 
----
+## **Project Overview**  
+The game features:  
+- A narrative-driven interface with branching story paths  
+- Interactive map navigation system  
 
-## **Features**  
-- 📖 **Immersive Narrative**: Branching storylines with 50+ decision points.  
-- 🖼️ **Sleek Java GUI**: Swing-based interface (themes: Dark/Light).  
-- 🎭 **Character System**: Stats (Strength, Wisdom) that affect outcomes.  
-- 🔍 **Interactive Elements**: Clickable inventory, auto-save/load.  
-- 🎵 **Atmospheric Sound**: Background music and SFX.  
+## **Development Phases**  
 
-```java
-// Example: GUI Window with Swing
-JFrame frame = new JFrame("Fantasy Quest");
-frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-frame.add(new GamePanel()); // Custom panel for story/inventory
-frame.pack();
-frame.setVisible(true);
-```
+### **GUI Implementation (1 Month)**  
+Building the interface required learning Swing's component system:  
+- `JFrame` for the main window structure  
+- `JPanel` containers for organizing elements  
 
----
+The initial version used basic event listeners for user interactions.  
 
-## **Tech Stack**  
-| Component         | Technology Used       |
-| ----------------- | --------------------- |
-| **Language**      | Java 17+              |
-| **GUI Framework** | Java Swing            |
-| **Audio**         | `javax.sound.sampled` |
-| **Build Tool**    | Maven/Gradle          |
+### **Map System Development (3 Months)**  
+The most complex component involved:  
+- Map where the user can drag the JPanel component so that they can tell where they are located (although the actual player location was never implemented)
+- mathematics used to allow dragging of JPanel
+- OOP architecture needed to fix the Map system
 
----
+This subsystem alone accounted for most of the development time.  
 
-## **How It Works**  
-1. **Player reads story segments** in a scrollable text pane.  
-2. **Choices appear as buttons** (e.g., "Open the chest" / "Run away").  
-3. **Game state updates** dynamically (health, inventory, story flags).  
+## **Technical Challenges**  
 
-> **Why Java Swing?**  
-> Lightweight, native look, and perfect for turn-based narrative games.  
-{: .prompt-tip }  
+### **Architectural Lessons**  
+Early versions suffered from:  
+- Tight coupling between game logic and presentation  
+- Overuse of global state variables  
+- Inconsistent error handling  
 
----
+These issues became apparent as the codebase grew beyond 10,000 lines.  
 
-## **Code Snippets**  
-### 1. **Choice Handling**  
-```java
-// Button action listener
-choiceButton.addActionListener(e -> {
-    player.addItem("Rusty Key");
-    storyPanel.appendText("\nYou found a key!");
-});
-```
+### **Scope Management**  
+The project demonstrated the importance of:  
+- Defining minimum viable features  
+- Resisting unnecessary additions  
+- Maintaining modular design  
 
-### 2. **Inventory System**  
-```java
-// Inventory GUI (JList)
-DefaultListModel<String> model = new DefaultListModel<>();
-model.addElement("Sword");
-model.addElement("Healing Potion");
-JList<String> inventoryList = new JList<>(model);
-```
+Several planned systems were abandoned when their complexity threatened project completion.  
 
----
+## **Educational Value**  
 
-## **Download & Play**  
-- **JAR File**: [Download here](#)  
-- **Source Code**: [GitHub](#)  
-- **Requires**: Java 17+ installed.  
+This project served as my introduction to:  
+- Object-oriented design patterns  
+- Event-driven programming  
+- 2D coordinate mathematics  
+- Software architecture principles  
 
-```bash
-# Run from terminal
-java -jar FantasyQuest.jar
-```
+While the implementation shows my inexperience at the time, the hands-on problem-solving provided irreplaceable learning opportunities that informed all my subsequent work.  
 
----
+## **Current Perspective**  
 
-## **Screenshots**  
-| Story Scene                                              | Inventory                                                  |
-| -------------------------------------------------------- | ---------------------------------------------------------- |
-| ![Story](/assets/img/Fantasy-quest-story.png){: .border } | ![Inventory](/assets/img/Fantasy-quest-inv.png){: .border } |
-
----
-
-## **Future Plans**  
-- [ ] Add ASCII art for key scenes.  
-- [ ] Export stories to JSON for modding.  
-- [ ] Steam Greenlight (with bundled JRE).  
-
----
-
-### **Tagalog Twist?**  
-- **Localized Title**: *"Paglalakbay ng Bayani"* (Hero’s Journey)  
-- **Filipino Themes**: Incorporate *aswang* myths or *barangay* settings.  
-
----
-
-**Pro Tip**: Use `JSplitPane` for a classic text-adventure layout (story on top, choices/inventory below). Let me know if you’d like help with specific Swing components!
+Looking back, I recognize:  
+1. The importance of proper planning before implementation  
+2. How framework limitations shape design decisions  
+3. Why maintainability matters more than features  

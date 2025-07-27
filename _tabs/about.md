@@ -2,6 +2,7 @@
 layout: page
 title: Hi my name is Francis Allen!
 description: "Full-Stack Developer | LeetCode Enthusiast | C# & Python Expert"
+icon: fas fa-user-tie
 order: 4
 ---
 
@@ -16,7 +17,7 @@ I'm a passionate full-stack developer who thrives on building robust backend sys
 ## 💻 Technical Arsenal
 
 ### Full-Stack Development
-- **Backend**: C# (.NET Core, ASP.NET), Python (Flask/Django fundamentals)
+- **Backend**: C# (.NET Core, ASP.NET)
 - **Frontend**: React, JavaScript, HTML5/CSS3
 - **Database**: SQL Server, MySQL, SQLite - from design to optimization
 - **Desktop**: WinForms, WPF, PyQt for rich user experiences
@@ -34,8 +35,7 @@ I'm a passionate full-stack developer who thrives on building robust backend sys
 - **350+ problems solved** across various difficulty levels
 - **Current Rank**: 304,314 (and climbing!)
 - **Specializations**: Stack/Queue operations, Array manipulations, Dynamic programming
-- **Growth mindset**: Continuously expanding into graph algorithms and system design
-
+- **Growth mindset**: Continuously expanding into graph algorithms and constantly sharpening my reading comprehension!
 [View my LeetCode journey](https://leetcode.com/u/FrancisToastedBuns/){: .button }
 
 <div style="margin-bottom: 3rem;"></div>
@@ -45,15 +45,15 @@ I'm a passionate full-stack developer who thrives on building robust backend sys
 ### Software Developer @ Alatiris Inc. (January 2025 - May 2025)
 *Full-stack development with infrastructure management*
 
-- **Built end-to-end solutions**: Developed complete HRMS systems from database design to user interface
+- **Modified Open Source Projects**: Modified HRMS systems from database design to user interface to fit the needs of the company
 - **Cloud deployment**: Successfully hosted and maintained multiple client websites on cloud infrastructure
-- **Client collaboration**: Gathered technical requirements and translated business needs into scalable solutions
+- **Client collaboration**: Gathered requirements and translated business needs into user requirements
 - **Linux systems**: Managed production servers and deployment pipelines
 
 ### Event Coordinator @ School Organization ALPHA (September 2024 - January 2025)
 *Leadership and project management*
 
-- **Hackathon orchestration**: Organized and executed technical competitions for 100+ participants
+- **Hackathon orchestration**: Organized and executed technical competitions for 50+ participants
 - **Team collaboration**: Coordinated cross-functional teams to deliver engaging educational events
 - **Community building**: Created interactive experiences that fostered learning and networking
 
@@ -102,16 +102,15 @@ Built strong analytical and mathematical foundations that continue to support my
 ## 🚧 Current Projects & Innovation
 
 ### Android Media Player & Playlist Downloader
-**Tech Stack**: Java/Kotlin, Android SDK, RESTful APIs
+**Tech Stack**: Flutter, Python (Tech Stack can change depending on friend's personal preference)
 
 Building a feature-rich mobile application that combines media playback with intelligent playlist management. The app includes custom audio processing, offline capabilities, and an intuitive user interface designed around my personal workflow needs.
 
-**Current focus**: Implementing advanced playlist algorithms and optimizing battery usage for extended playback sessions.
+**Current focus**: Testing out the best techstack to build the application, as we are currently in the planning stage.
 
 ### Interactive Storytelling Platform with InkJS
 **Tech Stack**: JavaScript, InkJS, HTML5/CSS3
 Developing an immersive web-based storytelling experience that leverages the power of narrative scripting. The platform features branching storylines, rich media integration, and dynamic content adaptation based on user choices.
 
-**Innovation aspects**: Creating reusable story components and developing a content management system for writers to easily publish interactive narratives.
+**Current focuss**: Most of the backend has been built, the remaining problemi have is to create a beautiful and seamless design for the website.
 
-**Why these matter**: Both projects demonstrate my ability to identify real-world problems, architect solutions, and execute them independently while learning new technologies along the way.
