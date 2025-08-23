@@ -37,7 +37,8 @@ image:
 
 ---
 
-## **Tech Stack**  
+## **Tech Stack** 
+
 | Component         | Technology Used         |
 | ----------------- | ----------------------- |
 | **Game Engine**   | Unity (C#)              |
@@ -72,7 +73,7 @@ public void ParseJavaCode(string filePath) {
 ## **Challenges & Solutions**  
 
 | Challenge                  | Solution Implemented              |
-|----------------------------|-----------------------------------|
+| -------------------------- | --------------------------------- |
 | Mimicking Java compilation | Used Roslyn + custom parsers      |
 | Engaging non-coders        | Added RPG-like quests & story     |
 | Cross-platform performance | Optimized Unity build for Android |
